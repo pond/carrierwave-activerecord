@@ -9,6 +9,6 @@ ActiveRecord::Schema.define do
     t.integer :size
     t.binary  :data
 
-    t.timestamps
+    t.timestamps :null => false
   end
 end

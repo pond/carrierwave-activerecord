@@ -7,7 +7,7 @@ class CreateCarrierwaveFiles < ActiveRecord::Migration
       t.string :size
       t.binary :data
 
-      t.timestamps
+      t.timestamps :null => false
     end
   end
 end

@@ -84,7 +84,6 @@ Given a people resource with an uploader mounted on the avatar field:
 ```ruby
 # app/models/person.rb
 class Person < ActiveRecord::Base
-  attr_accessible :avatar
   mount_uploader :avatar, AvatarUploader
 end
 ```
