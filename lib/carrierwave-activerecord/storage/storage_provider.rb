@@ -49,7 +49,7 @@ module CarrierWave
               model = uploader.model
 
               route_helpers = ::Rails.application.routes.url_helpers
-              path_method_name = "#{model.class.to_s.underscore}_path"
+              path_method_name = "#{model.class.to_s.underscore}_path".gsub( '/', '_' )
 
               url = route_helpers.send(path_method_name, model)
               url << "/#{uploader.mounted_as.to_s}"
